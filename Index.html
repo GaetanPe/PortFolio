@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <link rel="stylesheet" href="CSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio_Gaetan</title>
+    <title>Page Personnelle de Gaëtan Peronnet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1></h1>
+    <header>
+        <div class="header-content">
+            <h1>Gaëtan Peronnet</h1>
+            <p data-lang-fr="Développeur Gameplay et Front-End" data-lang-en="Gameplay and Front-End Developer"></p>
+        </div>
+        <div class="language-switcher">
+            <span class="lang-label">FR</span>
+            <label class="switch">
+                <input type="checkbox" id="language-selector">
+                <span class="slider round"></span>
+            </label>
+            <span class="lang-label">EN</span>
+        </div>
+    </header>
+    <nav>
+        <a href="#about" data-lang-fr="À propos" data-lang-en="About">À propos</a>
+        <a href="#projects" data-lang-fr="Projets" data-lang-en="Projects">Projets</a>
+        <a href="#contact" data-lang-fr="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2 data-lang-fr="À propos de moi" data-lang-en="About Me">À propos de moi</h2>
+            <div class="about-content">
+                <img src="PERONNETGaëtan.jpg" alt="Photo de Gaëtan Peronnet" class="profile-photo">
+                <div class="about-text">
+                    <p data-lang-fr="Je m'appelle Gaëtan Peronnet, je suis passionné par les technologies immersives et le développement informatique. Cherchant à m'expertisé en développement Gameplay et Front-End, j'aime transformer mes idées innovantes en expériences interactives captivantes. Mon parcours me permet d'apprendre à maîtriser plusieurs langages de programmation et frameworks, notamment JavaScript, Unity, Unreal, etc." data-lang-en="My name is Gaëtan Peronnet. I am passionate about immersive technologies and software development. Seeking to specialize in Gameplay and Front-End development, I enjoy transforming my innovative ideas into captivating interactive experiences. My journey allows me to learn and master several programming languages and frameworks, including JavaScript, Unity, Unreal, and more."></p>
+                    <p data-lang-fr="Je suis toujours à la recherche de nouveaux défis et opportunités pour innover. N'hésitez pas à me contacter si vous êtes intéresser par mon profil ou si vous voulez simplement échanger sur des projets passionnants." data-lang-en="I am always looking for new challenges and opportunities to innovate. Feel free to contact me if you are interested in my profile or if you just want to discuss exciting projects."></p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h2 data-lang-fr="Projets" data-lang-en="Projects">Projets</h2>
+            <div class="project-categories">
+                <button class="category-button" onclick="toggleCategory('unity')">Unity</button>
+                <div id="unity" class="category-content">
+                    <!-- Contenu des projets Unity -->
+                    <p>Projet Unity 1</p>
+                    <p>Projet Unity 2</p>
+                </div>
+                <button class="category-button" onclick="toggleCategory('unreal')">Unreal</button>
+                <div id="unreal" class="category-content">
+                    <!-- Contenu des projets Unreal -->
+                    <p>Projet Unreal 1</p>
+                    <p>Projet Unreal 2</p>
+                </div>
+                <button class="category-button" onclick="toggleCategory('web')">Web</button>
+                <div id="web" class="category-content">
+                    <!-- Contenu des projets Web -->
+                    <p>Projet Web 1</p>
+                    <p>Projet Web 2</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2 data-lang-fr="Contact" data-lang-en="Contact">Contact</h2>
+            <p data-lang-fr="Vous pouvez me retrouver sur :" data-lang-en="You can find me on:"></p>
+            <div class="social-links">
+                <a href="https://github.com/GaetanPe" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ga%C3%ABtan-peronnet/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Gaëtan Peronnet
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
